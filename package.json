@@ -1,0 +1,57 @@
+{
+  "name": "envpack",
+  "version": "1.0.17",
+  "description": "Envpack lets you share dotenv file with your teammates with one simple command.",
+  "main": "./dist/main.js",
+  "bin": {
+    "envpack": "./dist/main.js"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "premake": "yarn build",
+    "make": "nexe --build -o build/envpack dist/main.js --name envpack",
+    "make:win": "yarn make --target windows",
+    "make:mac": "yarn make --target mac",
+    "make:lin": "yarn make --target linux",
+    "postinstall": "node dist/lib/commands/postinstall.js"
+  },
+  "keywords": [
+    "dotenv",
+    "backup",
+    "environment",
+    "env",
+    "dotfile",
+    "dots",
+    "variables",
+    "vars",
+    ".env",
+    "config",
+    "settings",
+    "process.env",
+    "compress",
+    "extract"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fdorantesm/envpack"
+  },
+  "publisher": "https://dorant.es",
+  "author": "Fernando Dorantes",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
+    "extract-zip": "^2.0.1",
+    "glob": "^7.2.0",
+    "node-emoji": "^1.11.0",
+    "path": "^0.12.7",
+    "rimraf": "^3.0.2",
+    "zip-a-folder": "^1.1.0"
+  },
+  "devDependencies": {
+    "nexe": "^4.0.0-beta.19",
+    "nodemon": "^2.0.14",
+    "typescript": "^4.4.4"
+  }
+}
