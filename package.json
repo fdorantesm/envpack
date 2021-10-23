@@ -1,10 +1,10 @@
 {
   "name": "envpack",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Envpack lets you share dotenv file with your teammates with one simple command.",
   "main": "./dist/main.js",
   "bin": {
-    "envpack": "./dist/main.js"
+    "envpack": "dist/main.js"
   },
   "scripts": {
     "prebuild": "rimraf dist",
@@ -34,10 +34,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fdorantesm/envpack"
+    "url": "git+https://github.com/fdorantesm/envpack.git"
   },
-  "publisher": "https://dorant.es",
+  "homepage": "https://envpack.dorantes.dev/",
   "author": "Fernando Dorantes",
+  "contributors": [
+    "Fernando Dorantes <fdorantesm@gmail.com> (https://dorant.es)"
+  ],
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
@@ -53,5 +56,8 @@
     "nexe": "^4.0.0-beta.19",
     "nodemon": "^2.0.14",
     "typescript": "^4.4.4"
+  },
+  "bugs": {
+    "url": "https://github.com/fdorantesm/envpack/issues"
   }
 }
