@@ -1,6 +1,6 @@
 {
   "name": "envpack",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Envpack lets you share dotenv file with your teammates with one simple command.",
   "main": "./dist/main.js",
   "bin": {
